@@ -10,7 +10,7 @@ from os.path import join, dirname
 from dotenv import load_dotenv
 
 load_dotenv(verbose=True)
-dotenv_path = join(dirname(__file__), '.env')
+dotenv_path = join(dirname('__file__'), '.env')
 subscription_key = os.environ.get("AZURE_KEY")
 
 # API情報
